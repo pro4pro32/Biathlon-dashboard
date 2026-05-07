@@ -1,0 +1,123 @@
+/* Global styles for the Biathlon Analytics Dashboard */
+
+/* Design tokens */
+:root {
+    --background: #050814;
+    --surface: #0B1120;
+    --border: #1E293B;
+    --surface-hover: #111827;
+    --primary-red: #E63946;
+    --yellow: #F4D03F;
+    --ice-blue: #00E5FF;
+    --text-primary: #F8FAFC;
+    --text-muted: #94A3B8;
+}
+
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Utility classes */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+/* Card styles */
+.card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: var(--surface-hover);
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+/* Links */
+a {
+    color: var(--primary-red);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
