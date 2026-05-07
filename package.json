@@ -15,7 +15,6 @@
     "react-router-dom": "^5.2.0",
     "recharts": "^2.0.9",
     "tailwindcss": "^2.2.19",
-    "shadcn/ui": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
